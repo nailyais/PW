@@ -20,14 +20,14 @@
     <!-- Footer Ends -->
  
     <!--Java Script -->
-    <script src="<?php base_url() ?>asset/js/jquery-3.1.1.min.js"></script>
-    <script src="<?php base_url() ?>asset/js/jquery-migrate-1.2.1.min.js"></script>  
-    <script src="<?php base_url() ?>asset/js/bootstrap.min.js"></script>
-    <script src="<?php base_url() ?>asset/js/plugins/camera/js/jquery.mobile.customized.min.js"></script>
-    <script src="<?php base_url() ?>asset/js/plugins/camera/js/jquery.easing.1.3.js"></script>
-    <script src="<?php base_url() ?>asset/js/plugins/camera/js/camera.min.js"></script>  
-    <script src="<?php base_url() ?>asset/js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
-    <script src="<?php base_url() ?>asset/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="<?php base_url() ?>asset/js/custom.js"></script>    
+    <script src="<?php echo base_url() ?>asset/js/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo base_url() ?>asset/js/jquery-migrate-1.2.1.min.js"></script>  
+    <script src="<?php echo base_url() ?>asset/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>asset/js/plugins/camera/js/jquery.mobile.customized.min.js"></script>
+    <script src="<?php echo base_url() ?>asset/js/plugins/camera/js/jquery.easing.1.3.js"></script>
+    <script src="<?php echo base_url() ?>asset/js/plugins/camera/js/camera.min.js"></script>  
+    <script src="<?php echo base_url() ?>asset/js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
+    <script src="<?php echo base_url() ?>asset/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url() ?>asset/js/custom.js"></script>    
 </body>
 </html>

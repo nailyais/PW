@@ -11,14 +11,14 @@
         <title>Hospital Queues</title>
     
         <!-- Bootstrap -->
-        <link href="<?php base_url() ?>asset/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- CSS File -->
-        <link href="<?php base_url() ?>asset/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="<?php base_url() ?>asset/js/plugins/camera/css/camera.css" rel="stylesheet">
-        <link href="<?php base_url() ?>asset/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-        <link href="<?php base_url() ?>asset/css/style.css" rel="stylesheet">
-        <link href="<?php base_url() ?>asset/css/responsive.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/js/plugins/camera/css/camera.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/css/style.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/css/responsive.css" rel="stylesheet">
     </head>
     <body>
     <body>
