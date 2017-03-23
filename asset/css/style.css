@@ -668,7 +668,7 @@ h6 { font-size: 16px; }
 		.doctors-grid .bio-box .divider:before, 
 		.doctors-grid .bio-box .divider:after {
 			content: "";
-			width: 47%;
+			width: 70%;
 			height: 1px;
 			position: absolute;
 			top: 50%;
@@ -1177,7 +1177,7 @@ ul#doctors-grid {
 		.doctors-grid .bio-box .divider:before, 
 		.doctors-grid .bio-box .divider:after {
 			content: "";
-			width: 48%;
+			width: 50px;
 		}
 		.doctors-grid .bio-box .btn {
 			margin-bottom: 25px;

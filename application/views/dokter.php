@@ -50,27 +50,29 @@
             <?php
             foreach ($show_dokter as $sd) {
             ?>
+			<!-- Doctor Bio #1 Starts -->
 				<li class="col-md-3 col-sm-6 col-xs-12 doctors-grid">
 					<div class="bio-box">
 						<div class="profile-img">
 							<img src="<?php echo base_url().'asset/img/'. $sd['Image']?>" alt="Doctor" class="img-responsive img-center-sm img-center-xs">
 						</div>
 						<div class="inner">
-							<h4><?php echo $sd['Nama_dokter']?></h4>
+							<h5><?php echo $sd['Nama_dokter']?></h5>
 							<p class="designation"><?php echo $sd['Spesialis']?></p>
 							<p class="divider"><i class="fa fa-plus-square"></i></p>
-
-						</div>
-                        <?php $id_dokter = $sd['Id_dokter']?>							
-						<a href="<?php echo base_url().'Detail_dokter/detail/'. $id_dokter; ?>" class="btn btn-default text-uppercase">Profile</a>
-						<a href="doctor-profile.html" class="btn btn-secondary text-uppercase">Buat Jadwal</a>
+							<p>
+							</p>
+						</div>							
+						<a href="doctor-profile.html" class="btn btn-secondary text-uppercase">Book An Appointment</a>
 					</div>
 				</li>
+			<!-- Doctor Bio #1 Ends -->
 			<!-- Doctor Bio #1 Ends -->
             <?php
             }
             ?>
 			</ul>
+
 			</div>
 
 	<!-- Main Container Ends -->
