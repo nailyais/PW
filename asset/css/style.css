@@ -1987,12 +1987,12 @@ ul#doctors-grid {
 			.footer-area .newsletter .form-control {
 				padding: 15px 20px;
 				height: 52px;
-				color: #fff;
+				color: #17202A;
 				background-color: #CB4335;
 				border-color: #595959;
 			}
 			.footer-area .newsletter .form-control:focus {
-				border-color: #777;
+				border-color: #17202A;
 			}
 			.footer-area .newsletter .btn-secondary {
 				margin-top: 25px;
@@ -2011,11 +2011,11 @@ ul#doctors-grid {
 }
 	.copyright, 
 	.copyright a {
-		color: #8d8d8d;
+		color: #17202A;
 	}
 	.copyright span, 
 	.copyright a:hover {
-		color: #4db1e2;
+		color: #17202A;
 	}
 	.copyright p, 
 	.copyright ul {

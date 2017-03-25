@@ -7,7 +7,7 @@
                     <div class="camera_caption fadeFromLeft hidden-sm hidden-xs">
                         <h2 align="center">Selamat Datang</h2>
                         <h2 align="center">Di Hospital Queues</h2>
-                        <h3 align="center" style="color:#000000 ">Apa Penyakit Anda?</h3>
+                        <h3 align="center" style="color:#000000 ">Pilih Dokter!</h3>
                     </div>
                 </div>
             <!-- Slide #1 Ends -->
@@ -16,7 +16,7 @@
                     <div class="camera_caption fadeIn hidden-sm hidden-xs">
                         <h2  align="center">Selamat Datang</h2>
                         <h2  align="center">Jika Anda Sakit</h2>
-                        <h3 align="center" style="color:#000000 ">Lakukan Diagnosa!</h3>
+                        <h3 align="center" style="color:#000000 ">Pilih Dokter!</h3>
                         
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                     <div class="camera_caption fadeIn hidden-sm hidden-xs">
                         <h2 align="center">Selamat Datang</h2>
                         <h2 align="center">Ingin Konsultasi?</h2>
-                        <h3 align="center" style="color:#000000 ">Pilih Dokter</h3>
+                        <h3 align="center" style="color:#000000 ">Pilih Dokter!</h3>
                     </div>
                 </div>
             <!-- Slide #3 Ends -->

@@ -6,7 +6,7 @@
             <div class="copyright">
                 <div class="container clearfix">
                     <p class="pull-left">
-                        &copy; Copyright 2015. AlL Rights Reserved By <span>Hosptials</span>
+                        &copy; Moklet <span>Hospital Queues</span>
                     </p>
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="#">Terms Of Services</a></li>
