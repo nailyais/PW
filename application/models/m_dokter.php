@@ -4,7 +4,7 @@ class M_Dokter extends CI_Model{
 		return $this->db->get('dokter')->result_array();
 	}
 	function get_detail($id_dokter){
-		return $this->db->where('dokter.Id_dokter', $id_dokter)->limit(1)->get('dokter')->row();
+		return $this->db->where('dokter.id_dokter', $id_dokter)->limit(1)->get('dokter')->row();
 	}
 }
 ?>

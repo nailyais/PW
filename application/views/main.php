@@ -45,7 +45,7 @@
                         <p>
                             Untuk mengetahui apa penyakit anda, lakukan diagnosa. Untuk keterangan lebih lanjut mengenai penyakit anda kunjungi dokter yang bersangkutan.
                         </p>
-                        <a href="diagnosa.html" class="btn btn-transparent">Diagnosa</a>
+                        <a href="<?php echo base_url('diagnosa')?>" class="btn btn-transparent">Diagnosa</a>
                     </div>
                 </div>
             <!-- Box #1 Ends -->
@@ -57,7 +57,7 @@
                         <p>
                             Jika anda sudah mengetahui apa penyakit anda, pilih dokter sesuai dengan penyakit anda dan lakukan konsultasi dengan mengunjungi rumah sakit kami.
                         </p>
-                        <a href="dokter.html" class="btn btn-transparent">Pilih Dokter</a>
+                        <a href="<?php echo base_url('dokter')?>" class="btn btn-transparent">Pilih Dokter</a>
                     </div>
                 </div>
             <!-- Box #2 Ends -->

@@ -32,7 +32,7 @@
                     <!-- Navbar Header Starts -->
                         <div class="navbar-header">
                         <!-- Logo Starts -->
-                            <a href="index.html" class="navbar-brand">
+                            <a href="<?php echo base_url('home') ?>" class="navbar-brand">
                                 <i class="fa fa-heartbeat"></i>
                                 Hospital Queues
                             </a>
@@ -42,10 +42,10 @@
                     <!-- Navbar Collapse Starts -->
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li =><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="help.html">Help</a></li>
+                                <li =><a href="<?php echo base_url('home') ?>">Home</a></li>
+                                <li><a href="<?php echo base_url('about') ?>">About</a></li>
+                                <li><a href="<?php echo base_url('contact') ?>">Contact</a></li>
+                                <li><a href="<?php echo base_url('help') ?>">Help</a></li>
                             </ul>
                         </div>
                     <!-- Navbar Collapse Ends -->
