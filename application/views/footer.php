@@ -1,7 +1,6 @@
-               <!-- Footer Top Bar Starts -->
-        
-    
-        <!-- Footer Area Ends -->
+    <!-- Footer Starts -->
+        <footer class="main-footer">
+
         <!-- Copyright Starts -->
             <div class="copyright">
                 <div class="container clearfix">
@@ -17,8 +16,7 @@
             </div>
         <!-- Copyright Ends -->
         </footer>
-    <!-- Footer Ends -->
- 
+    <!-- Footer Ends --> 
     <!--Java Script -->
     <script src="<?php echo base_url() ?>asset/js/jquery-3.1.1.min.js"></script>
     <script src="<?php echo base_url() ?>asset/js/jquery-migrate-1.2.1.min.js"></script>  

@@ -22,23 +22,19 @@
 					<div class="profile-block">
 						<div class="panel panel-profile">
 							<div class="panel-heading">
-								<img src="<?php echo base_url() .'asset/img/' . $detail_dokter->Image ?>" class="img-responsive img-center-xs">
+								<img src="<?php echo base_url() .'asset/img/' . $detail_dokter->image ?>" class="img-responsive img-center-xs">
 									
-								<h3 class="panel-title"><?php echo $detail_dokter->Nama_dokter ?></h3>
+								<h3 class="panel-title"><?php echo $detail_dokter->nm_dokter ?></h3>
 							</div>
 							<div class="panel-body">
 								<ul class="list-unstyled">
 									<li class="row">
-										<span class="col-sm-4 col-xs-12"><strong>Spesialis</strong></span>
-										<span class="col-sm-8 col-xs-12"><?php echo $detail_dokter->Spesialis ?></span>
+										<span class="col-sm-4 col-xs-12"><strong>Hari Hadir</strong></span>
+										<span class="col-sm-8 col-xs-12"><?php echo $detail_dokter->hari_hadir ?></span>
 									</li>
 									<li class="row">
-										<span class="col-sm-4 col-xs-12"><strong>Hari Libur</strong></span>
-										<span class="col-sm-8 col-xs-12"><?php echo $detail_dokter->Libur ?></span>
-									</li>
-									<li class="row">
-										<span class="col-sm-4 col-xs-12"><strong>Work Days</strong></span>
-										<span class="col-sm-8 col-xs-12"><?php echo $detail_dokter->Hari_hadir ?></span>
+										<span class="col-sm-4 col-xs-12"><strong>Jam buka - Jam Tutup</strong></span>
+										<span class="col-sm-8 col-xs-12"><?php echo $detail_dokter->jam_buka . " - " . $detail_dokter->jam_tutup ?></span>
 									</li>
 								</ul>
 							</div>
@@ -54,14 +50,14 @@
 				</div>
 				<div class="col-sm-7 col-xs-12">
 					<div class="profile-details">
-						<h3 class="main-heading2"><?php echo $detail_dokter->Nama_dokter ?></h3>
+						<h3 class="main-heading2"><?php echo $detail_dokter->nm_dokter ?></h3>
 						<h4>Deskripsi</h4>
 						<p><?php echo $detail_dokter->deskripsi ?></p>
 						<h4>Biodata</h4>
-						<h6>Alamat: <?php echo $detail_dokter->Alamat ?></h6>
-						<h6>Jenis Kelamin:  <?php echo $detail_dokter->JK ?></h6>
-						<h6>Tanggal Lahir: <?php echo $detail_dokter->Tanggal_lahir ?></h6>
-						<h6>Telepon: <?php echo $detail_dokter->Telepon ?></h6>
+						<h6><b>Alamat: </b><?php echo $detail_dokter->alamat ?></h6>
+						<h6><b>Jenis Kelamin:  </b><?php echo $detail_dokter->jk ?></h6>
+						<h6><b>Tanggal Lahir: </b><?php echo $detail_dokter->tgl_lahir ?></h6>
+						<h6><b>Telepon: </b><?php echo $detail_dokter->tlp ?></h6>
 					</div>
 				</div>
 			</div>

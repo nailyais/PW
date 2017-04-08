@@ -11,28 +11,6 @@
 	</div>	
 	<br>
 	<div class="container">	
-		<!--<div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-            	<ul class="nav" id="side-menu">
-                	<li>
-                    	<a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Spesialis Anak</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>  Spesialis Bedah<span class="fa arrow"></span></a>
-					</li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Spesialis Penyakit Kulit dan Kelamin</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Spesialis Mata<span class="fa arrow"></span></a>
-                    </li>
-                    <li>
-                       <a href="#"><i class="fa fa-sitemap fa-fw"></i> Spesialis Penyakit Dalam<span class="fa arrow"></span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        -->
         <ul id="doctors-grid" class="row grid">
 			<?php
             	foreach ($show_dokter as $sd) {
@@ -46,7 +24,9 @@
 						<h5><?php echo $sd['nm_dokter']?></h5>
 						<p class="designation"></p>
 						<p class="divider"><i class="fa fa-plus-square"></i></p>
-					</div>							
+					</div>
+					<?php $id_dokter = $sd['id_dokter'] ?>			
+					<a href="<?php echo base_url() . 'detail_dokter/detail/' . $id_dokter ?>" class="btn btn-secondary text-uppercase">Lihat Detail</a>
 					<a href="doctor-profile.html" class="btn btn-secondary text-uppercase">Book An Appointment</a>
 				</div>
 			</li>
