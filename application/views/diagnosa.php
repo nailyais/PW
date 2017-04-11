@@ -1,4 +1,17 @@
-   <br>
+<div class="container">
+  <h2><span>Diagnosa</span></h2>
+</div>
+  <!-- Breadcrumb Starts -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="list-unstyled list-inline">
+          <li>Home</li>
+          <li class="active">Diagnosa</li>
+        </ul>
+      </div>
+    </div>    
+  <!-- Breadcrumb Ends -->
+  <br>
     <div class="container" >
    <form action="" method="post">
    <table class="table table-hover">

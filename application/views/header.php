@@ -19,6 +19,7 @@
         <link href="<?php echo base_url() ?>asset/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
         <link href="<?php echo base_url() ?>asset/css/style.css" rel="stylesheet">
         <link href="<?php echo base_url() ?>asset/css/responsive.css" rel="stylesheet">
+        <link href="<?php echo base_url() ?>asset/css/responsive-calendar.css" rel="stylesheet">
     </head>
     <body>
     <body>

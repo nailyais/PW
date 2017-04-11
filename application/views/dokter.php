@@ -27,7 +27,7 @@
 					</div>
 					<?php $id_dokter = $sd['id_dokter'] ?>			
 					<a href="<?php echo base_url() . 'detail_dokter/detail/' . $id_dokter ?>" class="btn btn-secondary text-uppercase">Lihat Detail</a>
-					<a href="doctor-profile.html" class="btn btn-secondary text-uppercase">Book An Appointment</a>
+					<a href="<?php echo base_url() . 'user/user_get/' . $id_dokter ?>" class="btn btn-secondary text-uppercase">Buat Jadwal	</a>
 				</div>
 			</li>
 			<?php

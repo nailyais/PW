@@ -26,6 +26,6 @@
     <script src="<?php echo base_url() ?>asset/js/plugins/camera/js/camera.min.js"></script>  
     <script src="<?php echo base_url() ?>asset/js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
     <script src="<?php echo base_url() ?>asset/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="<?php echo base_url() ?>asset/js/custom.js"></script>    
+    <script src="<?php echo base_url() ?>asset/js/custom.js"></script>  
 </body>
 </html>

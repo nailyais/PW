@@ -1,6 +1,20 @@
-    <div class="container second-container" >
+<div class="container">
+  <h2><span>Penyakit</span></h2>
+</div>
+  <!-- Breadcrumb Starts -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="list-unstyled list-inline">
+          <li>Home</li>
+          <li class="active">Penyakit</li>
+        </ul>
+      </div>
+    </div>    
+  <!-- Breadcrumb Ends -->
+  <br>
+  <div class="container second-container" >
 <div class="row">
-   <table class="table table-hover">
+<table class="table table-hover">
     <tr>
       <th>Penyakit</th>
       <th>Gejala</th>
@@ -17,6 +31,15 @@
       </form>
     </tr>
 </table>
+
+<div class="book-appointment-box">
+        <div class="row">
+          <div class="text-center-sm text-center-xs">
+            <h4>Untuk Mengetahui Lebih Lanjut Konsultasikan Dengan Dokter</h4>
+          </div>
+        </div>
+      </div>
+<br>
 <br>
 </div>
 </div>

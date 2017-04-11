@@ -2,7 +2,6 @@
 			<div class="container">
 				<h2><span>Doctor's</span></h2>
 			</div>
-		</div>
 	<!-- Main Banner Ends -->
 	<!-- Breadcrumb Starts -->
 		<div class="breadcrumb">
@@ -41,7 +40,7 @@
 							<div class="panel-footer text-center-md text-center-sm text-center-xs">
 								<div class="row">
 									<div class="col-lg-6 col-xs-12">
-										<a href="#" class="btn btn-secondary text-uppercase">Buat Jadwal</a>
+										<a href="<?php echo base_url() . 'user/user_get/' . $detail_dokter->id_dokter ?>" class="btn btn-secondary text-uppercase">Buat Jadwal</a>
 									</div>
 								</div>
 							</div>
