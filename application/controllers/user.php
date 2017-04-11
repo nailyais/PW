@@ -24,9 +24,9 @@ class User extends CI_Controller{
 					'logged_in' => TRUE
 		);
 		$this->session->set_userdata($userdata);
-		//redirect(base_url('user/check_session'));
+		$data['show_dokter'] = $this->m_user->get_dokdokter($id_dokter);
 		$this->load->view('header');
-		$this->load->view('tanggal');
+		$this->load->view('tanggal', $data);
 		$this->load->view('footer');
 		}
 	}
