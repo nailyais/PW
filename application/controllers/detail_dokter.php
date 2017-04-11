@@ -18,7 +18,7 @@ class Detail_dokter extends CI_Controller{
 				$this->load->view('footer');
 			}	
 			else{
-				redirect('home');
+				redirect('home_user');
 			}
 		}
 }

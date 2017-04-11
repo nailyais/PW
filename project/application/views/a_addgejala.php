@@ -202,7 +202,15 @@ desired effect
            
             <div class="form-group">
               <label for="exampleInputPassword1">ID Penyakit</label>
-              <textarea class="textarea" name="id_penyakit" placeholder="ID Penyakit" required="" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              <select name="id_penyakit" class="select">
+                <option value="">Pilih Penyakit</option>
+                <?php
+                  foreach ($show_penyakit as $id_pen) {
+                    echo "
+                          <option value='". $id_pen['id_penyakit'] ."'>". $id_pen['nm_penyakit'] ."</option>";
+                }
+                ?>
+              </select>
             </div>
 
            

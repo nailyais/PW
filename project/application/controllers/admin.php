@@ -15,7 +15,7 @@ class Admin extends CI_Controller {
 		
 				
 		if($this->session->userdata('adlog') == TRUE ){
-			header('location:http://localhost/project/admin/dasboard');
+			header('location:http://localhost/PWPW/project/admin/dasboard');
 		}else{
 			$this->load->view('admin');
 			
@@ -32,10 +32,10 @@ class Admin extends CI_Controller {
 			echo "berhasil";
 			$ses = array('admin' => 'ok' , 'adlog' => TRUE );
 			$this->session->set_userdata($ses);
-			header('location:http://localhost/project/admin/dasboard');
+			header('location:http://localhost/PWPW/project/admin/dasboard');
 		}else{ 
 			echo "tidak berhasil";
-			echo '<meta http-equiv="Refresh" content="1; URL=http://localhost/project/admin/"/></center>';
+			echo '<meta http-equiv="Refresh" content="1; URL=http://localhost/PWPW/project/admin/"/></center>';
 
 		}
 
@@ -43,7 +43,7 @@ class Admin extends CI_Controller {
 	public function dasboard(){
 		
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->penyakit_model->tampil();
 			$this->load->view('admindas',$data);
@@ -54,16 +54,16 @@ class Admin extends CI_Controller {
 
 	public function order(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			
-			header('location:http://localhost/project/admin/dasboard');
+			header('location:http://localhost/PWPW/project/admin/dasboard');
 		}
 		
 	}
 	public function antrian(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->detail_model->tampil();
 			$this->load->view('a_antrian',$data);
@@ -74,7 +74,7 @@ class Admin extends CI_Controller {
 
 	public function dokter(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->detail_model->tampild();
 			$this->load->view('a_dokter',$data);
@@ -85,7 +85,7 @@ class Admin extends CI_Controller {
 
 	public function booking(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->detail_model->tampilb();
 			$this->load->view('a_booking',$data);
@@ -96,7 +96,7 @@ class Admin extends CI_Controller {
 
 	public function gejala(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->detail_model->tampilg();
 			$this->load->view('a_gejala',$data);
@@ -107,7 +107,7 @@ class Admin extends CI_Controller {
 
 	public function poli(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->detail_model->tampilp();
 			$this->load->view('a_poli',$data);
@@ -118,7 +118,7 @@ class Admin extends CI_Controller {
 
 	public function user(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$data['data']=$this->detail_model->tampilu();
 			$this->load->view('a_user',$data);
@@ -128,16 +128,17 @@ class Admin extends CI_Controller {
 	}
 	public function addantrian(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
-			$this->load->view('a_addantrian');
+			$data['show_poli']=$this->detail_model->tampilp_a();
+			$this->load->view('a_addantrian', $data);
 			
 		}
 		
 	}
 	public function adddokter(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$this->load->view('a_adddokter');
 			
@@ -146,16 +147,17 @@ class Admin extends CI_Controller {
 
 	public function addgejala(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
-			$this->load->view('a_addgejala');
+			$data['show_penyakit']=$this->penyakit_model->tampil_p();
+			$this->load->view('a_addgejala', $data);
 			
 		}	
 	}
 
 	public function addbooking(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$this->load->view('a_addbooking');
 			
@@ -165,9 +167,10 @@ class Admin extends CI_Controller {
 
 	public function addpoli(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
-			$this->load->view('a_addpoli');
+			$data['show_dokter']=$this->detail_model->tampild_a();
+			$this->load->view('a_addpoli', $data);
 			
 		}
 		
@@ -175,7 +178,7 @@ class Admin extends CI_Controller {
 
 	public function adduser(){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			$this->load->view('a_adduser');
 			
@@ -184,7 +187,7 @@ class Admin extends CI_Controller {
 	}
 		public function editantrian($no_antrian){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			//echo $id_post;exit();
 			$id=$this->uri->segment('3');
@@ -199,7 +202,7 @@ class Admin extends CI_Controller {
 	}
 	public function editdokter($id_dokter){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			//echo $id_post;exit();
 			$id=$this->uri->segment('3');
@@ -212,7 +215,7 @@ class Admin extends CI_Controller {
 
 		public function editbooking($id_booking){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			//echo $id_post;exit();
 			$id=$this->uri->segment('3');
@@ -228,7 +231,7 @@ class Admin extends CI_Controller {
 
 	public function editgejala($id_gejala){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			//echo $id_post;exit();
 			$id=$this->uri->segment('3');
@@ -244,7 +247,7 @@ class Admin extends CI_Controller {
 
 	public function editpoli($id_poli){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			//echo $id_post;exit();
 			$id=$this->uri->segment('3');
@@ -259,7 +262,7 @@ class Admin extends CI_Controller {
 	}
 	public function edituser($NIK){
 		if($this->session->userdata('adlog') == FALSE ){
-			header('location:http://localhost/project/admin/');
+			header('location:http://localhost/PWPW/project/admin/');
 		}else{
 			//echo $id_post;exit();
 			$id=$this->uri->segment('3');
@@ -310,7 +313,7 @@ class Admin extends CI_Controller {
 	public function logout(){
 		$this->session->unset_userdata('admin');
 		$this->session->unset_userdata('adlog');
-		header('location:http://localhost/project/admin/');
+		header('location:http://localhost/PWPW/project/admin/');
 	}
 }
 ?>

@@ -14,7 +14,7 @@
             Administrator Login<br>
         </div>
         <div id="bawah">
-            <form action="http://localhost/project/admin/login" method="post">
+            <form action="http://localhost/PWPW/project/admin/login" method="post">
                 
                 <input name="username" placeholder="Username .." type="text" id="userid" size="20" maxlength="20" class="masuk" />
                 

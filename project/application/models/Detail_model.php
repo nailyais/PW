@@ -27,6 +27,18 @@ class Detail_model extends ci_model
 			return array();
 		}
 	}
+	function tampild_a()
+	{
+		$query=$this->db->get('dokter');
+		if($query ->num_rows()>0)
+		{
+			return $query->result_array();
+		}
+		else
+		{
+			return array();
+		}
+	}
 
 	function tampilb()
 	{
@@ -60,6 +72,18 @@ class Detail_model extends ci_model
 		if($query ->num_rows()>0)
 		{
 			return $query->result();
+		}
+		else
+		{
+			return array();
+		}
+	}
+	function tampilp_a()
+	{
+		$query=$this->db->get('poli');
+		if($query ->num_rows()>0)
+		{
+			return $query->result_array();
 		}
 		else
 		{

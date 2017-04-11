@@ -68,20 +68,34 @@ class User extends CI_Controller{
 			$id_poli = $this->input->post('id_poli');
 			$get_dok = $this->m_user->get_dokdokter($id_dokter);
 			$get_poli = $get_dok->id_poli;
-			$get_ant = $this->m_user->get_antrian($id_poli);
-			//$data['show_antrian'] = $this->m_user->get_antrian($id_poli);
+			date_default_timezone_set("Asia/Bangkok");
+			if ($tgl_realisasi == date("Y-m-d")) {
+				if(date("h:i:sa") > date("04:00:00pm")){
+					echo "<script type='text/javascript'>
+              				alert('Semua Poli Sudah Tutup, Silahkan Registrasi lagi besok sebelum jam 16.00');</script>";
+	            	    	redirect(base_url('home_user'),'refresh');
+				}
+				else{
+					$get_ant = $this->m_user->get_antrian($id_poli);
+					$data['show_antrian'] = $this->m_user->get_antrian($id_poli);
 
-			if ($get_ant == 0){
-				echo "<script type='text/javascript'>
-                      alert('GAGAL Mengambil No Antrian, Antrian Sedang Penuh');</script>";
-	                redirect(base_url('home'),'refresh');
-
+					if ($get_ant == 0){
+						echo "<script type='text/javascript'>
+              				alert('GAGAL Mengambil No Antrian, Antrian Sedang Penuh');</script>";
+	            	    	redirect(base_url('home_user'),'refresh');
+	            	    }
+					else {
+						$no_antrian = $get_ant->no_antrian;
+						$this->m_user->get_book($id_dokter, $nik, $id_poli, $no_antrian, $tgl_realisasi);
+						$this->m_user->update_status($no_antrian);
+						redirect(base_url() . 'user/reportt/' . $no_antrian);
+					}
+				}
 			}
 			else {
-				$no_antrian = $get_ant->no_antrian;
-				$this->m_user->get_book($id_dokter, $nik, $id_poli, $no_antrian, $tgl_realisasi);
-				$this->m_user->update_status($no_antrian);
-				redirect(base_url() . 'user/reportt/' . $no_antrian);
+				echo "<script type='text/javascript'>
+              				alert('Anda Tidak Bisa Mengambil Nomor Antrian Untuk Besok, Silahkan Registrasi sesuai dengan Tanggal Sekarang');</script>";
+	            	    	redirect(base_url('home_user'),'refresh');
 			}
 		}
 	}

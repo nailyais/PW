@@ -196,7 +196,15 @@ desired effect
            
             <div class="form-group">
               <label for="exampleInputPassword1">Poli</label>
-              <textarea class="textarea" name="id_poli" placeholder="Poli" required="" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              <select name="id_poli" class="select">
+                <option value="">Pilih Poli</option>
+                <?php
+                  foreach ($show_poli as $idpol) {
+                    echo "
+                          <option value='". $idpol['id_poli'] ."'>". $idpol['nm_poli'] ."</option>";
+                }
+                ?>
+              </select>
             </div>
                        
           </div>

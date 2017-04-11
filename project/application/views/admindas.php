@@ -165,7 +165,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url();?>admin/dokter">Dokter</a></li>
-            <li><a href="<?php echo base_url();?>admin/adddokter">Add Dokter</a></li>
+           <!-- <li><a href="<?php echo base_url();?>admin/adddokter">Add Dokter</a></li>-->
           </ul>
         </li>
 
@@ -266,14 +266,6 @@ desired effect
                 </tr>
                 <?php endforeach;?>
                 </tbody>
-                <tfoot>
-                 <tr>
-                  <th>ID</th>
-                  <th>Nama</th>
-                  <th>Deskripsi</th>
-                  <th>Poli</th>
-                </tr>
-                </tfoot>
               </table>
             </div>
             <!-- /.box-body -->

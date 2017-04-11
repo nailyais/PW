@@ -13,11 +13,13 @@ class Crud extends CI_Controller{
  
     function index(){
         $data['antrian'] = $this->m_data->tampil_data()->result();
+
         $this->load->view('a_antrian',$data);
     }
  
     function tambah(){
-        $this->load->view('a_addantrian');
+        $data['show_poli'] = $this->Detail_model->tampilp()->result_array();
+        $this->load->view('a_addantrian', $data);
     }
  
     function tambah_aksi(){
@@ -25,7 +27,7 @@ class Crud extends CI_Controller{
         $status = 'Aktif';
         $id_poli = $this->input->post('id_poli');
        
- 
+        
         $data = array(
             'no_antrian' => $no_antrian,
             'status' => $status,
@@ -35,41 +37,41 @@ class Crud extends CI_Controller{
         $this->m_data->input_data($data,'antrian');
         redirect('admin/antrian');
     }
-    function tambah_dokter(){
-        $id_dokter = $this->input->post('id_dokter');
-        $nm_dokter = $this->input->post('nm_dokter');
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
-        $alamat = $this->input->post('alamat');
-        $jk = $this->input->post('username');
-        $tgl_lahir = $this->input->post('id_dokter');
-        $tlp = $this->input->post('nm_dokter');
-        $hari_hadir = $this->input->post('username');
-        $jam_buka = $this->input->post('id_dokter');
-        $jam_tutup = $this->input->post('nm_dokter');
-        $image = $this->input->post('image');
-        $deskripsi = $this->input->post('deskripsi');
-       
- 
-        $data = array(
-            'id_dokter' => $id_dokter,
-            'nm_dokter' => $nm_dokter,
-            'username' => $username,
-            'password' => $password,
-            'alamat' => $alamat,
-            'jk' => $jk,
-            'tgl_lahir' => $tgl_lahir,
-            'tlp' => $tlp,
-            'hari_hadir' => $hari_hadir,
-            'jam_buka' => $jam_buka,
-            'jam_tutup' => $jam_tutup,
-            'image' => $image,
-            'deskripsi' => $deskripsi,
-           
-            );
-        $this->m_data->input_data($data,'dokter');
-        redirect('admin/dokter');
-    }
+    //function tambah_dokter(){
+     //   $id_dokter = $this->input->post('id_dokter');
+       // $nm_dokter = $this->input->post('nm_dokter');
+//        $username = $this->input->post('username');
+ //       $password = $this->input->post('password');
+ //       $alamat = $this->input->post('alamat');
+ //       $jk = $this->input->post('username');
+ //       $tgl_lahir = $this->input->post('id_dokter');
+ //       $tlp = $this->input->post('nm_dokter');
+ //       $hari_hadir = $this->input->post('username');
+ //       $jam_buka = $this->input->post('id_dokter');
+ //       $jam_tutup = $this->input->post('nm_dokter');
+ //       $image = $lala['orig_name'];
+  //      $deskripsi = $this->input->post('deskripsi');
+  //     
+   //     $data = array(
+     //       'id_dokter' => $id_dokter,
+       //     'nm_dokter' => $nm_dokter,
+         //   'username' => $username,
+           // 'password' => $password,
+          //  'alamat' => $alamat,
+           // 'jk' => $jk,
+  //          'tgl_lahir' => $tgl_lahir,
+    //        'tlp' => $tlp,
+      //      'hari_hadir' => $hari_hadir,
+        //    'jam_buka' => $jam_buka,
+         //   'jam_tutup' => $jam_tutup,
+          //  'image' => $image,
+        //    'deskripsi' => $deskripsi,
+        //   
+        //    );
+       // $this->m_data->input_data($data,'dokter');
+       // redirect('admin/dokter');
+    //}
+  //  }
     function tambah_user(){
         $NIK = $this->input->post('NIK');
         $nm_user = $this->input->post('nm_user');

@@ -150,7 +150,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url();?>admin/dokter">Dokter</a></li>
-            <li><a href="<?php echo base_url();?>admin/adddokter">Add Dokter</a></li>
+            <!--<li><a href="<?php echo base_url();?>admin/adddokter">Add Dokter</a></li>-->
            
             
           </ul>
@@ -185,6 +185,7 @@ desired effect
         <!-- /.box-header -->
         <!-- form start -->
         <form  method="post" action="<?php echo base_url();?>crud/tambah_dokter" role="form">
+        <?php echo form_open_multipart('crud/tambah_dokter');?>
           <div class="box-body">
 
 
@@ -252,7 +253,11 @@ desired effect
             <div class="form-group">
               <label for="exampleInputPassword1">Deskripsi</label>
               <textarea class="textarea" name="deskripsi" placeholder="Deskripsi" required="" style="width: 100%; height: 50px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-            </div>       
+            </div>     
+            <div class="form-group">
+                <label for="exampleInputPassword1">Image</label>
+                <input type="file" name="image" id="image">
+            </div>    
           </div>
           <div class="box-footer">
             <button type="submit" class="btn btn-primary">Submit</button>

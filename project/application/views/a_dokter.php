@@ -149,7 +149,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url();?>admin/dokter">Dokter</a></li>
-            <li><a href="<?php echo base_url();?>admin/adddokter">Add Dokter</a></li>
+            <!--<li><a href="<?php echo base_url();?>admin/adddokter">Add Dokter</a></li>-->
             
             
           </ul>
