@@ -11,7 +11,7 @@
 </div>		
 <div class="container main-container">
 	<ul class="list-unstyled list-inline">
-		<li><a href="<?php echo base_url() . 'user'?>" class="btn btn-primary">Daftar Baru</a></li>
+		<li><a href="<?php echo base_url() . 'user/user_get/' . $show_dokter->id_dokter ?>" class="btn btn-primary">Daftar Baru</a></li>
 		<li><a href="#NIK" class="btn btn-primary">Pendaftaran dengan NIK</a></li>
 	</ul>
 	<div class="contact-content">

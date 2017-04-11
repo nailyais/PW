@@ -4,7 +4,7 @@
 <div class="breadcrumb">
 	<div class="container">
 		<ul class="list-unstyled list-inline">
-			<li><a href="index.html">Home</a></li>
+			<li>Home</li>
 			<li class="active">Daftar Baru</li>
 		</ul>
 	</div>
